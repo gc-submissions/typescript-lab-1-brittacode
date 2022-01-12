@@ -1,18 +1,20 @@
 import { calcAverageProductPrice } from "../src/products";
 
-describe("calcAverageProductPrice", () => {
+describe("calculate the average price of the three items", () => {
   test("three products", () => {
     const value: number = calcAverageProductPrice([
-      { name: "apples", price: 5 },
-      { name: "oranges", price: 5 },
-      { name: "mangos", price: 11 }
+      {name: "iPad", price: 799},
+      {name: "TV", price: 1200},
+      {name: "Desk", price: 300}
+
     ]);
     expect(value).toBe(7);
   });
   test("two products", () => {
     const value: number = calcAverageProductPrice([
-      { name: "greens", price: 3 },
-      { name: "cornbread", price: 4 }
+      {name: "TV", price: 1200},
+      {name: "Desk", price: 300}
+
     ]);
     expect(value).toBe(3.5);
   });
