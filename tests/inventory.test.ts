@@ -1,6 +1,6 @@
 import { calcInventoryValue } from "../src/inventory";
 
-describe("calcInventoryValue", () => {
+describe("Give the value of the current inventory ", () => {
   test("three products", () => {
     const value: number = calcInventoryValue([
       {name: "motor", price: 10.00, quantity: 10},
